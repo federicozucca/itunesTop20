@@ -6,7 +6,11 @@ var MusicDetails = React.createClass({
 
     var musicNodes = this.props.music.map(function (music, index) {
       return ( 
-          <Song title={ music["im:name"].label } artist={ music["im:artist"].label }  category={music.category.attributes.term} link={music["im:collection"].link.attributes.href} image={ music["im:image"][2].label } key={index}>
+          <Song title={ music["im:name"].label } 
+          artist={ music["im:artist"].label }  
+          category={music.category.attributes.term} 
+          link={music["im:collection"].link.attributes.href} 
+          image={ music["im:image"][2].label } key={index}>
           </Song>
         )
     })

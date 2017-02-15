@@ -23,6 +23,7 @@ var MusicContainers = React.createClass({
     return(
       <div>
         <MusicDetails music={this.state.music}/>
+
       </div>
       );
   }
